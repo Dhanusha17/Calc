@@ -1,11 +1,8 @@
 # Ex.08 Design of a Standard Calculator
-## Date:28-04-2024
-
+## Date:30-04-2024
 ## AIM:
 To design a web application for a standard calculator with minimum five operations.
-
 ## DESIGN STEPS:
-
 ### Step 1:
 Clone the github repository and create Django admin interface.
 
@@ -36,13 +33,9 @@ Publish the website in the given URL.
  <link rel="stylesheet" href="style.css">
  </head>
  <body style= "background-image: url('theme.jpg')" align="center">
-    
     <div class="card">
-        
-
       <div class="calculator">
         <h3 class="card-title" >DHANUSHA <br> 212223040034</h3>
-        
         <form>
           <div class="display">
             <input type="text" name="display">
@@ -79,19 +72,16 @@ Publish the website in the given URL.
         </form>
       </div>
     </div>
-    
     <script src="index.js"></script>
 </body>
 </html>
 ```
-
 ## index.js
 ```
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
 const specialChars = ["%", "*", "/", "-", "+", "="];
 let output = "";
-
 const calculate = (btnValue) => {
   display.focus();
   if (btnValue === "=" && output !== "") {
@@ -106,7 +96,6 @@ const calculate = (btnValue) => {
   }
   display.value = output;
 };
-
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
@@ -127,15 +116,12 @@ body{
   h3{
     color: #fff;
   }
-  
   .card-title {
     font-size: 22px;
   }
-  
   p, a {
     font-size: 1rem;
   }
-  
   a {
     color: hotpink;
     text-decoration: none;
@@ -194,14 +180,9 @@ body{
     color:brown;
   }
 ```
-
 ## OUTPUT:
 ![Screenshot 2024-04-28 141208](https://github.com/Dhanusha17/Calc/assets/151549957/fdf3f4e9-d729-4d4c-8db2-921d114872d5)
 ![Screenshot 2024-04-28 150930](https://github.com/Dhanusha17/Calc/assets/151549957/e8665924-6f24-4c9b-9da6-2e1a7894f16b)
 ![Screenshot 2024-04-28 151031](https://github.com/Dhanusha17/Calc/assets/151549957/3757423a-e59f-425b-9fff-bb7a8e4939e5)
-
-
-
-
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
